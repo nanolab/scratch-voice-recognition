@@ -7,7 +7,7 @@ class Voice:
     def __init__(self):
         self.text = ""
 
-    @command("listen %m.languages language", defaults=["English"], is_blocking=True)
+    @command("listen %m.languages", defaults=["English"], is_blocking=True)
     def recognize(self, languages):
         lang = {
             "English": "en-US",
